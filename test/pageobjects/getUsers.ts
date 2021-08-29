@@ -1,19 +1,25 @@
 import fetch from 'node-fetch';
-interface Users {
-    name : string;
-    gender : string;
-    probability : number;
-    count : number;
-}
 
 class APISample {
- async getUserDetail(): Promise<any> {
-return fetch('https://api.genderize.io?name=luc')
-        .then(res => res.json())
-        .then(res => {
-            return res as Users[]
-        });
-    }
+ async getUserDetail() {
+ const res = await fetch('https://gorest.co.in/public/v1/users/1');
+const json = await res.json();
+return json; 
+}
+
+ async createUser(){
+    const res = await fetch('https://gorest.co.in/public/v1/users/1', {
+        method: 'POST',
+        headers: {
+            Authorization: ''
+        },
+        body: {
+            //add json body
+        }
+
+});
+ 
+ }
 }
 
 export default new APISample();
