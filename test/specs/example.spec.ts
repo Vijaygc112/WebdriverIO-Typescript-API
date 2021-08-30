@@ -18,8 +18,12 @@ describe('Test run', () => {
     console.log(jsonresponse.data.name);
 
     const user1 = new Users(jsonresponse.data);
+
     console.log('>>>>>>>>>>>>>>>')
     console.log(user1);
+    console.log('>>>>>>>>>>>>>>>')
+    console.log('>>>>>>>>>>>>>>>')
+    console.log(JSON.stringify(user1));
     console.log('>>>>>>>>>>>>>>>')
 
 

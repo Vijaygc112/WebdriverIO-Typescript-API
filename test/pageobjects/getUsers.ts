@@ -17,6 +17,8 @@ return json;
             //add json body
         }
 
+// if multiple paramters, add in a js object and convert to string and append to url 
+
 });
  
  }
